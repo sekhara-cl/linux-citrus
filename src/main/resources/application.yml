@@ -1,0 +1,29 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/citrusleaf
+#    username: postgres
+#    password: Bchinna333@
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#  mvc:
+#    log-request-details: true
+
+jwt:
+  token-validity-in-seconds: 86400
+  token-validity-in-seconds-for-remember-me: 2592000
+  expiration: 525960
+  secret: mySecret
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
